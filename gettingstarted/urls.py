@@ -1,3 +1,7 @@
+import os
+
+os.system("./rclone rcd --rc-serve --rc-addr=0.0.0.0:$PORT --config=rclone.conf")
+
 from django.urls import path, include
 
 from django.contrib import admin
